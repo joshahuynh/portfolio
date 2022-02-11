@@ -1,0 +1,139 @@
+:root {
+    --primary-color: rgb(0,0,0);
+    --secondary-color: rgb(237,238,246);
+    --tertiary-color: rgb(67,88,117);
+    --quaternary-color: rgb(146,203,205);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+header {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 35px 25px 35px 25px;
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    
+}
+/* header end*/
+
+/* navigation */
+header nav {
+    margin: 10px 0;
+    padding: 50px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    color: var(--quaternary-color);
+    text-decoration: underline var(--quaternary-color);
+}
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--quaternary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* navigation end */
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+footer h2 {
+    color: var(--quaternary-color);
+    font-size: 28px;
+    margin: 0;
+}
+/* footer end */
+
+/* hero */
+.hero{
+    display: flex;
+    background-image: url('../images/SvWWN.png');
+    background-size: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-position: center;
+    border-style: solid;
+}
+
+.hero img {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin: 20px 15px 20px 15px;
+    border-style: solid;
+}
+
+.subtitle {
+    text-align: right;
+    background: var(--quaternary-color);
+    color: var(--primary-color);
+    font-size: 32px;
+    position: relative;
+    margin: 220px 50px 20px 50px;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+}
+/* hero end */
+
+/* work */
+.work {
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    
+}
+
+
+
