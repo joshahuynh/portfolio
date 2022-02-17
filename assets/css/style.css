@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
+    position: sticky;
+    z-index: 99;
 }
 
 header h1 {
@@ -128,6 +130,12 @@ footer h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-style: solid;
     border-radius: 25px;
+    text-decoration: none;
+}
+
+.subtitle:hover {
+    opacity: 0.5;
+    color: white;
 }
 /* hero end */
 
@@ -136,9 +144,9 @@ footer h2 {
     font-size: 32px;
     border-right: 10px solid var(--secondary-color);
     padding-right: 10px;
-    text-align: right;
+    text-align: center;
     width: 25%;
-    margin: 20px 0;
+    margin: 50px 0;
     display: flex;
     flex: initial;
     justify-content: center;
@@ -157,11 +165,9 @@ footer h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 20px;
+    margin: 60px 40px;
     width: 50%;
-    font-weight: bolder;
     font-size: 22px;
-    margin-top: 20px;
 }
 /* about me end */
 
@@ -177,8 +183,8 @@ footer h2 {
 }
 
 .content {
-    width: 50%;
-    margin: 20px 0;
+    width: 60%;
+    margin: 60px 20px;
 }
 
 /* table */
@@ -195,7 +201,7 @@ footer h2 {
 .run-buddy {
     width: 100%;
     margin-bottom: 20px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .link {
@@ -266,7 +272,7 @@ footer h2 {
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .contact-info a {
@@ -274,10 +280,10 @@ footer h2 {
     color: black;
     font-size: 25px;
     display: inline-block;
-    margin-left: 20px;
     padding: 20px;
     text-align: center;
     font-weight: bold;
+    justify-content: center;
 }
 
 .contact-info a:hover {
@@ -291,11 +297,21 @@ footer h2 {
         padding: 0;
         justify-content: center;
         position: relative;
+        height: 200px;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav {
+        padding: 0;
+        margin: 0;
     }
 
     header h1 {
         width: 100%;
         text-align: center;
+        padding: 10px;
+        margin: 20px 10px 0 10px;
     }
 
     header nav ul {
@@ -317,15 +333,20 @@ footer h2 {
     
     .subtitle {
         font-size: 20px;
+        position: relative;
     }
 
     .hero-img {
         width: 120px;
     }
 
-     .about-me {
+    .about-me {
         font-size: 15px;
         justify-content: center;
+    }
+
+    .about-me p {
+        width: 80%
     }
 
     .section-title {
@@ -333,6 +354,7 @@ footer h2 {
         border-bottom: solid 3px;
         border-right: none;
         text-align: center;
+        padding-bottom: 10px;
     }
 
     .content {
@@ -351,6 +373,8 @@ footer h2 {
 
     .contact-info a {
         padding-right: 0;
+        text-align: center;
+        margin:0 25px;
     }
 }
 
@@ -365,6 +389,7 @@ footer h2 {
 
     .hero-img {
         width: 120px;
+        margin-bottom: 25px;
     }
 
     .about-me {
@@ -377,6 +402,7 @@ footer h2 {
         border-bottom: solid 3px;
         border-right: none;
         text-align: center;
+        margin-bottom: 0px;
     }
 
     .content {
@@ -391,7 +417,6 @@ footer h2 {
 
     .contact-info a {
         padding-right: 0;
-        justify-content: center;
     }
 
 }
@@ -400,16 +425,19 @@ footer h2 {
     header {
         text-align: center;
     }
+
     .subtitle {
-        vertical-align: middle;
+        margin: 220px 0 10px 0;
     }
 
     .hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-}
+    .hero-img {
+        margin-bottom: 25px;
+    }
 
     .contact-info {
         display: flex;
@@ -417,17 +445,19 @@ footer h2 {
         flex-wrap: wrap;
         text-align: center;
     }
-    
-    #email {
-        margin-left: 0;
-        padding-left: 3px;
-        padding-right: 3px;
-        overflow-wrap: break-word;
+
+    .section-title {
+        flex: 1 100%;
+        text-align: center;
     }
 
     .run-buddy {
         width: 100%;
-        margin-left: 10px;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 100%;
     }
 
     .table {
@@ -436,8 +466,27 @@ footer h2 {
         grid-template-rows: repeat(1, 1fr);
         grid-gap: 25px;
         width: 100%;
-        margin-left: 10px;
+        margin: 0;
         grid-auto-flow: dense;
+    }
 }
+
+@media screen and (max-width: 375px) {
+    .contact-info {
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-img {
+        width: 100%;
+        margin: 5px 20px 5px 0;
+    }
+    .subtitle {
+        margin: 5px 50px 5px 50px;
+    }
 }
 /* mediaquery end */
