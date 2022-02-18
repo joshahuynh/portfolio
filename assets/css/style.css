@@ -24,6 +24,7 @@ header {
     flex-wrap: wrap;
     top: 0;
     position: sticky;
+    position: -webkit-sticky;
     z-index: 99;
 }
 
@@ -487,6 +488,10 @@ footer h2 {
     }
     .subtitle {
         margin: 5px 50px 5px 50px;
+    }
+
+    .footer h2 {
+        font-size: 22px;
     }
 }
 /* mediaquery end */
