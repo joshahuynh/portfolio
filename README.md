@@ -21,4 +21,4 @@ Link to the GitHub repository: https://github.com/joshahuynh/portfolio
 
 Screenshot of the website:
 
-![](portfolio%20ss.PNG)
+![](assets/images/portfolio%20ss.PNG)
