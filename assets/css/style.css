@@ -199,7 +199,7 @@ footer h2 {
     grid-auto-flow: dense;
 }
 
-.run-buddy {
+.travel-advisor {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -218,9 +218,9 @@ footer h2 {
     opacity: 1;
 }
 
-.run-buddy a {
+.travel-advisor a {
     height: 400px;
-    background-image: url(../images/run-buddy-ss.PNG);
+    background-image: url(../images/screenshot.PNG);
     grid-column: 2;
     grid-row: 2;
     background-size: cover;
@@ -233,6 +233,16 @@ footer h2 {
     flex-wrap: wrap;
 }
 
+.run-buddy {
+    background-image: url(../images/run-buddy-ss.PNG);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.run-buddy:hover {
+    opacity: 1;
+}
+
 .horiseon {
     background-image: url(../images/Horiseon\ SS.PNG);
     background-size: cover;
@@ -243,22 +253,34 @@ footer h2 {
     opacity: 1;
 }
 
-.future-project-1 a {  
-    background-image: url(../images/neon-style-coming-soon-glowing-background-design_1017-25516.webp);
+.password-generator {  
+    background-image: url(../images/password-generator-ss.PNG);
     background-size: cover;
     opacity: 0.5;
 }
 
-.future-project-2 a {
-    background-image: url(../images/neon-style-coming-soon-glowing-background-design_1017-25516.webp);
+.password-generator:hover {
+    opacity: 1;
+}
+
+.code-quiz {
+    background-image: url(../images/code-quiz-ss.PNG);
     background-size: cover;
     opacity: 0.5;
 }
 
-.future-project-3 a {
-    background-image: url(../images/neon-style-coming-soon-glowing-background-design_1017-25516.webp);
+.code-quiz:hover {
+    opacity: 1;
+}
+
+.weather-dashboard {
+    background-image: url(../images/weather-dashboard-ss.PNG);
     background-size: cover;
     opacity: 0.5;
+}
+
+.weather-dashboard:hover {
+    opacity: 1;
 }
 
 .content h3, .content p {
