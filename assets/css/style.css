@@ -199,7 +199,7 @@ footer h2 {
     grid-auto-flow: dense;
 }
 
-.travel-advisor {
+.quotes-forum {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -218,9 +218,9 @@ footer h2 {
     opacity: 1;
 }
 
-.travel-advisor a {
+.quotes-forum a {
     height: 400px;
-    background-image: url(../images/screenshot.PNG);
+    background-image: url(../images/quotes-forum-ss.PNG);
     grid-column: 2;
     grid-row: 2;
     background-size: cover;
@@ -283,13 +283,13 @@ footer h2 {
     opacity: 1;
 }
 
-.quote-forum {  
-    background-image: url(../images/quotes-forum-ss.PNG);
+.travel-advisor {  
+    background-image: url(../images/screenshot.PNG);
     background-size: cover;
     opacity: 0.5;
 }
 
-.quote-forum:hover {
+.travel-advisor:hover {
     opacity: 1;
 }
 
