@@ -283,6 +283,16 @@ footer h2 {
     opacity: 1;
 }
 
+.quote-forum {  
+    background-image: url(../images/quotes-forum-ss.PNG);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.quote-forum:hover {
+    opacity: 1;
+}
+
 .content h3, .content p {
     background-color: var(--tertiary-color);
     width: 100%;
